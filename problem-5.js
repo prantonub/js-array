@@ -7,10 +7,13 @@ Food List Problem with shift and unshift
 */
 
 const foods = ['Burger', 'Pizza', 'Pasta', 'Singara', 'Fuchka'];
-console.log(foods); // Original list
+console.log(foods); 
+// Output: ['Burger', 'Pizza', 'Pasta', 'Singara', 'Fuchka']
 
 foods.shift(); // Remove the first food
-console.log(foods); // After removing 'Burger'
+console.log(foods); 
+// Output: ['Pizza', 'Pasta', 'Singara', 'Fuchka']
 
 foods.unshift('Biriyani'); // Add new item at the beginning
-console.log(foods); // After adding 'Biriyani'
+console.log(foods); 
+// Output: ['Biriyani', 'Pizza', 'Pasta', 'Singara', 'Fuchka']
