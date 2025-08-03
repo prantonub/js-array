@@ -1,20 +1,22 @@
-// Bus Stop Management Problem
+/*
+💻 Programming Language Queue at a Tech Booth
 
-// 1. Start with a list of people waiting: ['Alice', 'Bob', 'Charlie']
-// 2. Two new people ('David', 'Eva') arrive and stand at the front using unshift()
-// 3. The first person in the line boards the bus using shift()
-// 4. Finally:
-//    - Print the updated line
-//    - Print the name of the person who boarded the bus
+1. Start with a list of languages waiting for a demo: ['Python', 'JavaScript', 'C++']
+2. Two trending languages ('Rust', 'Go') arrive and are added to the front of the line using unshift()
+3. The first language in the line gets featured and leaves the queue using shift()
+4. Finally:
+   - Print the updated queue
+   - Print the name of the language that was featured
+*/
 
-const busLine = ['Alice', 'Bob', 'Charlie'];
-console.log("Initial line:", busLine);
+const languageQueue = ['Python', 'JavaScript', 'C++'];
+console.log("Initial language queue:", languageQueue);
 
-busLine.unshift('David', 'Eva');
-console.log("After new arrivals:", busLine);
+languageQueue.unshift('Rust', 'Go');
+console.log("After trending languages arrive:", languageQueue);
 
-const boardedPerson = busLine.shift();
-console.log("After one person boards:", busLine);
+const featuredLanguage = languageQueue.shift();
+console.log("After featuring one language:", languageQueue);
 
-console.log("Updated bus line:", busLine);
-console.log("Person who boarded:", boardedPerson);
+console.log("Updated language queue:", languageQueue);
+console.log("Featured language:", featuredLanguage);
